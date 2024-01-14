@@ -13,7 +13,8 @@ const Button = ({ label, iconUrl, backgroundColor, textColor, borderColor, fullW
                       `${backgroundColor} ${textColor} ${borderColor}`:
                       "bg-coral-red border-coral-red text-white"
                     }
-                    rounded-full " `}>
+                    rounded-full 
+                    ${fullWidth && 'w-full'}" `}>
         {label}
         {iconUrl && <img
             src={iconUrl}
